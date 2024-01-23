@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.ticket {
+  background: #c32f38;
+}
+
+.ticket-conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ticket-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 45px 0;
+  }
+
+  button {
+    color: #ffffff;
+    border: none;
+    background-color: #1f252a;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 200ms linear;
+    width: 190px;
+    height: 45px;
+  }
+
+  button:hover {
+    background-color: #ffffff;
+    color: #1f252a;
+    transition: background-color 0.5s ease;
+  }
+}
