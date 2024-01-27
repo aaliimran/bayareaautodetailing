@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header";
 import homeWallpaper from "./assets/img/home-wallpaper.jpg";
@@ -9,7 +11,6 @@ import volunteerActivism from "./assets/img/volunteer_activism.svg";
 import aboutUsCircle from "./assets/img/about-us-circle.jpg";
 import IDALogo from "./assets/img/IDA_logo.jpg";
 import Ticket from "./components/ticket/Ticket";
-import mapImg from "./assets/img/map-img.png";
 import Footer from "./components/footer/Footer";
 import Send from "./components/send/Send";
 
@@ -17,20 +18,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="backround-container">
-        <div className="links-container">
-          <div className="links-and-button">
-            <div className="links">
-              <a href="">HOME</a>
-              <a href="">PRICING</a>
-              <a href="">ABOUT</a>
-              <a href="">GALLERY</a>
-              <a href="">CONTACT</a>
-            </div>
-            <button>BOOK ONLINE</button>
-          </div>
-        </div>
-      </div>
+
       <div className="aboutUs-title">
         <div className="image-mask"></div>
         <img src={homeWallpaper} alt="" />
@@ -202,12 +190,12 @@ function App() {
               we go everywhere!
             </h3>
             <div className="about-us-buttons">
-              <a href="">
+              <Link to="/about">
                 <button>OUR TEAM</button>
-              </a>
-              <a href="">
+              </Link>
+              <Link to="/pricing">
                 <button>RATES</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
