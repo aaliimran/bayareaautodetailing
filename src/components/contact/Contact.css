@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   p {
+    text-align: center;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 54px;
@@ -30,6 +31,7 @@
     margin: 0 0 20px;
   }
   span {
+    text-align: center;
     color: #ffffff;
     font-size: 18px;
     font-family: "Open Sans", "sans-serif";
@@ -74,8 +76,7 @@
     font-size: 18px;
     font-weight: 600;
     transition: all 200ms linear;
-    width: 200px;
-    height: 50px;
+    padding: 15px 20px;
   }
 
   button:hover {
@@ -156,8 +157,7 @@
   background: #c32f38;
   display: flex;
   justify-content: center;
-  width: 65px;
-  height: 65px;
+  padding: 10px;
 }
 
 .map-img {
@@ -172,4 +172,118 @@
 
 .contacts-map-container {
   padding: 0 0 60px;
+}
+
+@media screen and (max-width: 1220px) {
+  .contact-us-container {
+    padding: 60px 20px;
+  }
+
+  .contact-map-and-send-massage {
+    flex-direction: column;
+    padding: 0;
+
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      width: 100%;
+      padding: 0 0 40px;
+    }
+  }
+
+  .contacts-map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  .contact-send-massage-content {
+    align-items: center;
+    width: 70%;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .map-img {
+    width: 70%;
+  }
+
+  .contact-message-input {
+    width: 100%;
+  }
+
+  .contact-about-input {
+    width: 100%;
+  }
+
+  .input-title {
+    input {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
+
+  .contacts-phone {
+    padding: 0 0 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us-title {
+    p {
+      font-size: 34px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+  }
+
+  .contacts {
+    p {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 17px;
+    }
+  }
+
+  .img-phone {
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .input-title {
+    font-size: 14px;
+
+    input {
+      height: 35px;
+    }
+
+    textarea {
+      height: 135px;
+    }
+  }
+
+  .contact-send-massage-content {
+    button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
 }

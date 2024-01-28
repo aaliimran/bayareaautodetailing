@@ -100,3 +100,75 @@
     padding: 0 0 10px;
   }
 }
+
+@media screen and (max-width: 860px) {
+  .about-container {
+    padding: 0 20px;
+  }
+
+  .about-bay-title {
+    p {
+      text-align: center;
+    }
+  }
+
+  .video-title {
+    width: 85%;
+  }
+
+  .video-and-title-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    iframe {
+      width: 85%;
+    }
+  }
+
+  .about-owner {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-bay-title {
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .video-and-title-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    iframe {
+      height: 85%;
+    }
+  }
+
+  .video-title {
+    span {
+      font-size: 14px;
+      line-height: 27px;
+    }
+  }
+
+  .owner-name {
+    span {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .owner-text {
+    span {
+      font-size: 14px;
+      line-height: 27px;
+    }
+  }
+}
