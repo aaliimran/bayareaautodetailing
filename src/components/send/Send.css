@@ -53,8 +53,8 @@
 }
 
 .map {
-  width: 425px;
-  height: 605px;
+  width: 50%;
+  padding: 25px;
 
   img {
     width: 100%;
@@ -63,10 +63,18 @@
 }
 
 .send-massage-content {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 38px;
+}
+
+.inputs-and-button {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  gap: 24px;
 
   button {
     color: #ffffff;
@@ -145,13 +153,22 @@
       justify-content: center;
       text-decoration: none;
       padding: 0 0 40px;
+      width: 75%;
+    }
+  }
+  .inputs-and-button {
+    align-items: center;
+    width: 100%;
+
+    button {
+      width: 100%;
     }
   }
 
   .map {
-    width: 50%;
+    width: 80%;
     height: 100%;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
   }
 }
 

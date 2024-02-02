@@ -4,6 +4,7 @@ import Header from "../header/Header";
 import mapImgContact from "../../assets/img/map-contact.jpg";
 import enabledPhone from "../../assets/img/phone-enabled-f.svg";
 import Footer from "../footer/Footer";
+import Map from "../map/Map";
 
 const Contact = () => {
   return (
@@ -24,51 +25,53 @@ const Contact = () => {
             </h3>
           </div>
           <div className="contact-us-underline"></div>
-          <div className="contact-map-and-send-massage">
-            <div className="contacts-map-container">
-              <div>
-                <div className="contacts-phone">
-                  <div className="img-phone">
-                    <img src={enabledPhone} alt="" />
-                  </div>
-                  <div className="contacts">
-                    <p>Mobile</p>
-                    <span>(650) 346-8793</span>
-                  </div>
+          <div className="contacts-container">
+            <div>
+              <div className="contacts-phone">
+                <div className="img-phone">
+                  <img src={enabledPhone} alt="" />
                 </div>
-                <div className="contacts-phone">
-                  <div className="img-phone">
-                    <img src={enabledPhone} alt="" />
-                  </div>
-                  <div className="contacts">
-                    <p>Alternate</p>
-                    <span>(510) 798-3967</span>
-                  </div>
+                <div className="contacts">
+                  <p>Mobile</p>
+                  <span>(650) 346-8793</span>
                 </div>
               </div>
-              <div className="map-img">
-                <img src={mapImgContact} alt="" />
+              <div className="contacts-phone">
+                <div className="img-phone">
+                  <img src={enabledPhone} alt="" />
+                </div>
+                <div className="contacts">
+                  <p>Alternate</p>
+                  <span>(510) 798-3967</span>
+                </div>
               </div>
             </div>
-            <div className="contact-send-massage-content">
-              <div className="contact-about-input">
-                <div className="input-title">
-                  <span>Name *</span>
-                  <input type="text" />
+          </div>
+          <div className="map-and-inputs">
+            <div className="map">
+              <Map />
+            </div>
+            <div className="inputs-and-button">
+              <div className="contact-send-massage-content">
+                <div className="contact-about-input">
+                  <div className="input-title">
+                    <span>Name *</span>
+                    <input type="text" />
+                  </div>
+                  <div className="input-title">
+                    <span>Email *</span>
+                    <input type="text" />
+                  </div>
+                  <div className="input-title">
+                    <span>Phone *</span>
+                    <input type="text" />
+                  </div>
                 </div>
-                <div className="input-title">
-                  <span>Email *</span>
-                  <input type="text" />
-                </div>
-                <div className="input-title">
-                  <span>Phone *</span>
-                  <input type="text" />
-                </div>
-              </div>
-              <div className="contact-message-input">
-                <div className="input-title">
-                  <span>Message *</span>
-                  <textarea type="text" />
+                <div className="contact-message-input">
+                  <div className="input-title">
+                    <span>Message *</span>
+                    <textarea type="text" />
+                  </div>
                 </div>
               </div>
               <a href="">

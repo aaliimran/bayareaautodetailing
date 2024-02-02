@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
-import headerLogo from "../../assets/img/BAAD-Logo.jpg";
-import enabledPhone from "../../assets/img/phone-enabled.svg";
-import email from "../../assets/img/email.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,33 +9,10 @@ const Header = () => {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
 
+  const sendRef = useRef(null);
+
   return (
     <>
-      <div className="container">
-        <header className="header">
-          <div className="header-logo">
-            <img src={headerLogo} alt="" />
-          </div>
-          <div className="header-content">
-            <div className="phone">
-              <a href="#">
-                <div className="svg-and-title">
-                  <img src={enabledPhone} alt="" />
-                  <p>Call</p>
-                </div>
-                <span>(650) 346-8793</span>
-              </a>
-            </div>
-            <div className="email">
-              <div className="svg-and-title">
-                <img src={email} alt="" />
-                <p>Email</p>
-              </div>
-              <span>kmlewis280@gmail.com</span>
-            </div>
-          </div>
-        </header>
-      </div>
       <div className="background-container">
         <div className="links-container">
           <div className="links-and-button">
@@ -68,11 +42,7 @@ const Header = () => {
                 CONTACT
               </Link>
             </div>
-            <a
-              href="https://bayareaautodetailing.square.site/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/#" target="_blank" rel="noopener noreferrer">
               <button>BOOK ONLINE</button>
             </a>
           </div>

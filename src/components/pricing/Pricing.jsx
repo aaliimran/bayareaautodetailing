@@ -28,7 +28,7 @@ const Pricing = () => {
                     </div>
                   </div>
                   <div className="packages-price">
-                    <p>$40cars/$55suv</p>
+                    <p>$60cars/$75suv</p>
                   </div>
                   <div className="price-underline"></div>
                   <div className="included-price-title">
@@ -97,7 +97,7 @@ const Pricing = () => {
                     </div>
                   </div>
                   <div className="packages-price">
-                    <p>$80cars/$90suv</p>
+                    <p>$100cars/$110suv</p>
                   </div>
                   <div className="price-underline"></div>
                   <div className="included-price-title">
@@ -174,7 +174,7 @@ const Pricing = () => {
                     </div>
                   </div>
                   <div className="packages-price">
-                    <p>$180cars/$200suv</p>
+                    <p>$200cars/$220suv</p>
                   </div>
                   <div className="price-underline"></div>
                   <div className="included-price-title">

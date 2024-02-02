@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header";
-import homeWallpaper from "./assets/img/home-wallpaper.jpg";
-import ourServicesImg1 from "./assets/img/our-services-img1.jpg";
-import ourServicesImg2 from "./assets/img/our-services-img2.jpg";
-import ourServicesImg3 from "./assets/img/our-services-img3.jpg";
+import homeVideo from "./assets/img/homeVideo.mp4";
+import ourServicesImg1 from "./assets/gallery/exterior7.jpg";
+import ourServicesImg2 from "./assets/gallery/interior6.jpg";
+import ourServicesImg3 from "./assets/gallery/engine1.jpg";
 import psychology from "./assets/img/psychology.svg";
 import volunteerActivism from "./assets/img/volunteer_activism.svg";
 import aboutUsCircle from "./assets/img/about-us-circle.jpg";
@@ -20,16 +20,14 @@ function App() {
       <Header />
 
       <div className="aboutUs-title">
-        <div className="image-mask"></div>
-        <img src={homeWallpaper} alt="" />
-        <div className="intro-title-container">
-          <div className="home-intro-img-title">
-            <p>
-              WE COME TO YOU, YOUR HOME, YOUR WORK, YOUR BUSINESS, ANYWHERE,
-              EVERYWHERE!
-            </p>
-          </div>
-        </div>
+        <video
+          src={homeVideo}
+          alt="Home Video"
+          autoPlay
+          muted
+          loop
+          className="home-video"
+        ></video>
       </div>
       <div className="our-services">
         <div className="our-services-title-content">
@@ -64,7 +62,7 @@ function App() {
               <div className="image-mask"></div>
               <a href="">
                 <p>
-                  EXTERIOR <br /> SERVICES
+                  INTERIOR <br /> SERVICES
                 </p>
                 <img src={ourServicesImg2} alt="" />
               </a>
@@ -83,7 +81,7 @@ function App() {
               <div className="image-mask"></div>
               <a href="">
                 <p>
-                  EXTERIOR <br /> SERVICES
+                  ADDITIONAL <br /> SERVICES
                 </p>
                 <img src={ourServicesImg3} alt="" />
               </a>

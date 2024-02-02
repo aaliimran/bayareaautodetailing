@@ -6,58 +6,33 @@
 }
 
 .aboutUs-title {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
-.aboutUs-title img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-}
-
-.aboutUs-title .image-mask {
-  position: absolute;
+.home-video {
   width: 100%;
   height: 100%;
-  background-color: rgba(51, 51, 51, 0.3);
+  object-fit: cover; /* Ensure video covers the entire container */
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
-.intro-title-container {
-  align-items: center;
-  display: flex;
-  max-width: 1500px;
-  margin: 0 auto;
-  justify-content: center;
+.intro-title-overlay {
   position: relative;
-  z-index: 2;
-}
-
-.home-intro-img-title {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
+  z-index: 2; /* Ensure text is above the video */
+  color: #ffffff;
   text-align: center;
-
-  p {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 54px;
-    font-weight: 700;
-    font-style: italic;
-    width: 70%;
-    position: relative;
-    padding: 30px;
-    z-index: 3;
-  }
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px; /* Adjust based on your design */
+  font-weight: 700;
+  padding: 20px;
 }
 
 .our-services {

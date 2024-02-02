@@ -56,11 +56,18 @@
   border-top: 3px solid #c32f38;
 }
 
-.contact-map-and-send-massage {
+.contacts-container {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
-  padding: 60px 0;
+  justify-content: start;
+  padding: 60px 38px 0;
+}
+
+.map-and-inputs {
+  display: flex;
+  align-items: start;
+  padding-bottom: 60px;
+  justify-content: center;
 }
 
 .contact-send-massage-content {
@@ -162,7 +169,7 @@
 
 .map-img {
   width: 90%;
-  height: 100%;
+  height: 640px;
 
   img {
     width: 100%;
@@ -170,25 +177,29 @@
   }
 }
 
+/* 
 .contacts-map-container {
-  padding: 0 0 60px;
-}
+  width: 50%;
+} */
 
 @media screen and (max-width: 1220px) {
   .contact-us-container {
     padding: 60px 20px;
   }
 
-  .contact-map-and-send-massage {
+  .contacts-container {
+    justify-content: center;
+  }
+
+  .map-and-inputs {
     flex-direction: column;
-    padding: 0;
+    align-items: center;
 
     a {
       display: flex;
       justify-content: center;
       text-decoration: none;
-      width: 100%;
-      padding: 0 0 40px;
+      width: 75%;
     }
   }
 
@@ -202,7 +213,7 @@
 
   .contact-send-massage-content {
     align-items: center;
-    width: 70%;
+    width: 75%;
 
     button {
       width: 100%;
@@ -210,7 +221,8 @@
   }
 
   .map-img {
-    width: 70%;
+    width: 130%;
+    height: 450px;
   }
 
   .contact-message-input {
@@ -237,6 +249,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .map-img {
+    display: none;
+  }
   .contact-us-title {
     p {
       font-size: 34px;

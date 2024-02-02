@@ -2,18 +2,16 @@ import React, { useState } from "react";
 import "./Carousel.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import before1 from "../../assets/img/before1.jpg";
-import after1 from "../../assets/img/after1.jpg";
-import before2 from "../../assets/img/before2.jpg";
-import after2 from "../../assets/img/after2.jpg";
-import before3 from "../../assets/img/before3.jpg";
-import after3 from "../../assets/img/after3.jpg";
-import before4 from "../../assets/img/before4.jpg";
-import after4 from "../../assets/img/after4.jpg";
-import before5 from "../../assets/img/before5.jpg";
-import after5 from "../../assets/img/after5.jpg";
-import before6 from "../../assets/img/before6.jpg";
-import after6 from "../../assets/img/after6.jpg";
+import beforeAndAfter1 from "../../assets/img/before&after1.jpg";
+import beforeAndAfter2 from "../../assets/img/before&after2.jpg";
+import beforeAndAfter3 from "../../assets/img/before&after3.jpg";
+import beforeAndAfter4 from "../../assets/img/before&after4.jpg";
+import beforeAndAfter5 from "../../assets/img/before&after5.jpg";
+import beforeAndAfter6 from "../../assets/img/before&after6.jpg";
+import beforeAndAfter7 from "../../assets/img/before&after7.jpg";
+import beforeAndAfter8 from "../../assets/img/before&after8.jpg";
+import beforeAndAfter9 from "../../assets/img/before&after9.jpg";
+import beforeAndAfter10 from "../../assets/img/before&after10.jpg";
 
 import Slider from "react-slick";
 
@@ -75,99 +73,113 @@ const Carousel = () => {
       <div className="Carousel">
         <Slider {...settings}>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(before1)}>
-              <img src={before1} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter1)}
+            >
+              <img src={beforeAndAfter1} alt="" />
             </div>
             <div className="after">
-              <p>BEFORE</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(after1)}>
-              <img src={after1} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter2)}
+            >
+              <img src={beforeAndAfter2} alt="" />
             </div>
             <div className="after">
-              <p>AFTER</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(before2)}>
-              <img src={before2} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter3)}
+            >
+              <img src={beforeAndAfter3} alt="" />
             </div>
             <div className="after">
-              <p>BEFORE</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(after2)}>
-              <img src={after2} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter4)}
+            >
+              <img src={beforeAndAfter4} alt="" />
             </div>
             <div className="after">
-              <p>AFTER</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(before3)}>
-              <img src={before3} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter5)}
+            >
+              <img src={beforeAndAfter5} alt="" />
             </div>
             <div className="after">
-              <p>BEFORE</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(after3)}>
-              <img src={after3} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter6)}
+            >
+              <img src={beforeAndAfter6} alt="" />
             </div>
             <div className="after">
-              <p>AFTER</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(before4)}>
-              <img src={before4} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter7)}
+            >
+              <img src={beforeAndAfter7} alt="" />
             </div>
             <div className="after">
-              <p>BEFORE</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(after4)}>
-              <img src={after4} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter8)}
+            >
+              <img src={beforeAndAfter8} alt="" />
             </div>
             <div className="after">
-              <p>AFTER</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(before5)}>
-              <img src={before5} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter9)}
+            >
+              <img src={beforeAndAfter9} alt="" />
             </div>
             <div className="after">
-              <p>BEFORE</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
           <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(after5)}>
-              <img src={after5} alt="" />
+            <div
+              className="box"
+              onClick={() => handleImageClick(beforeAndAfter10)}
+            >
+              <img src={beforeAndAfter10} alt="" />
             </div>
             <div className="after">
-              <p>AFTER</p>
-            </div>
-          </div>
-          <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(before6)}>
-              <img src={before6} alt="" />
-            </div>
-            <div className="after">
-              <p>BEFORE</p>
-            </div>
-          </div>
-          <div className="box-container">
-            <div className="box" onClick={() => handleImageClick(after6)}>
-              <img src={after6} alt="" />
-            </div>
-            <div className="after">
-              <p>AFTER</p>
+              <p>BEFORE&AFTER</p>
             </div>
           </div>
         </Slider>

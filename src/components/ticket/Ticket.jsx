@@ -11,10 +11,7 @@ const Ticket = () => {
               Want your vehicle to feel like new? <br /> Schedule a service
               today!
             </p>
-            <a
-              href="https://bayareaautodetailing.square.site/product/interiordetail/3"
-              target="_blank"
-            >
+            <a href="#" target="_blank">
               <button>BOOK ONLINE</button>
             </a>
           </div>

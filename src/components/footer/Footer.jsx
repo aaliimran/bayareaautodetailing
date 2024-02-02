@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import headerLogo from "../../assets/img/BAAD-Logo.jpg";
+import Logo from "../../assets/img/Logo.png";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-content">
           <div className="footer-img">
-            <img src={headerLogo} alt="" />
+            <img src={Logo} alt="" />
           </div>
           <div className="about-title">
             <p>ABOUT US</p>
@@ -22,20 +22,20 @@ const Footer = () => {
             <p>CONTACT US</p>
             <div className="contact">
               <h3>Mobile</h3>
-              <span>(650) 346-8793</span>
+              <span>(415) 520-5015</span>
             </div>
             <div className="contact">
-              <h3>Alternate</h3>
-              <span> (510) 798-3967</span>
+              <h3>Email</h3>
+              <span> detailingmastersca.com</span>
             </div>
           </div>
         </div>
       </div>
-      <div className="devs">
+      {/* <div className="devs">
         <div className="devs-title">
-          <p>© 2024 Bay Area Auto Detailing • Made with by Ohava</p>
+          <p>© 2024  • Made with by Ohava</p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
