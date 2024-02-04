@@ -35,9 +35,16 @@
 }
 
 .packages-1-2-blocks {
-  padding: 80px 0;
   display: flex;
   justify-content: center;
+  padding: 80px 0;
+  gap: 24px;
+}
+
+.packages-4-5-blocks {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
   gap: 24px;
 }
 
@@ -52,6 +59,10 @@
 }
 .package-3-block {
   padding-top: 140px;
+}
+
+.package-5-block {
+  padding-top: 60px;
 }
 
 .packages-title {
@@ -173,12 +184,16 @@
     flex-direction: column;
     padding: 60px 20px;
   }
+  .packages-4-5-blocks {
+    flex-direction: column;
+  }
   .package-2-block {
     padding-top: 20px;
   }
   .package-3-block {
     padding-top: 20px;
   }
+
   .underline {
     padding: 0 20px;
   }
@@ -194,6 +209,9 @@
 
 @media screen and (max-width: 480px) {
   .packages-1-2-blocks {
+    padding: 40px 20px;
+  }
+  .packages-4-5-blocks {
     padding: 40px 20px;
   }
 
