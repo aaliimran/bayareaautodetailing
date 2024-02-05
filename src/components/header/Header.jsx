@@ -9,8 +9,6 @@ const Header = () => {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
 
-  const sendRef = useRef(null);
-
   return (
     <>
       <div className="background-container">
@@ -42,9 +40,9 @@ const Header = () => {
                 CONTACT
               </Link>
             </div>
-            <a href="/#" target="_blank" rel="noopener noreferrer">
+            <Link to="/send">
               <button>BOOK ONLINE</button>
-            </a>
+            </Link>
           </div>
         </div>
         <button className="burger-menu" onClick={toggleMenu}>

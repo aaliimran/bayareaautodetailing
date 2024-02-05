@@ -7,6 +7,7 @@ import Pricing from "./components/pricing/Pricing.jsx";
 import About from "./components/about/About.jsx";
 import Gallery from "./components/gallery/Gallery.jsx";
 import Contact from "./components/contact/Contact.jsx";
+import Send from "./components/send/Send.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/send" element={<Send />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

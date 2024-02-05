@@ -1,6 +1,5 @@
 import React from "react";
 import "./Send.css";
-import mapImg from "../../assets/img/map-img.png";
 import Map from "../map/Map";
 
 const Send = () => {

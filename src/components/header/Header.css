@@ -5,10 +5,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #c32f38;
+  --primary-background-color: #1f252a;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  /* display: flex; */
   justify-content: start;
   align-items: center;
   display: none;
@@ -65,9 +69,8 @@
 }
 
 .background-container {
-  background-color: #1f252a;
-  /* border-top: 2px solid #c32f38;*/
-  border-bottom: 2px solid #c32f38;
+  background-color: var(--primary-background-color);
+  border-bottom: 2px solid var(--primary-color);
   max-width: 100%;
 }
 
@@ -81,7 +84,7 @@
 
 .links-and-button {
   align-items: center;
-  background: #1f252a;
+  background: var(--primary-background-color);
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -91,7 +94,7 @@
     color: #ffffff;
     border-radius: 10px;
     border: none;
-    background-color: #c32f38;
+    background-color: var(--primary-color);
     padding: 10px 25px;
     font-family: "Montserrat", "sans-serif";
     font-size: 16px;
@@ -100,7 +103,7 @@
   }
 
   button:hover {
-    color: #1f252a;
+    color: var(--primary-background-color);
     background-color: #ffffff;
     transition: background-color 0.5s ease;
   }
@@ -120,12 +123,12 @@
   }
 
   a:hover {
-    background: #c32f38;
+    background: var(--primary-color);
   }
 }
 
 .links a.active {
-  background: #c32f38;
+  background: var(--primary-color);
 }
 
 .burger-menu {
@@ -185,6 +188,6 @@
   }
 
   .menu-fullscreen a:hover {
-    color: #c32f38;
+    color: var(--primary-color);
   }
 }

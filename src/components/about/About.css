@@ -5,8 +5,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #c32f38;
+  --primary-background-color: #1f252a;
+}
+
 .about {
-  background-color: #1f252a;
+  background-color: var(--primary-background-color);
 }
 
 .about-container {

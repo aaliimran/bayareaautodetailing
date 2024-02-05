@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #c32f38;
+}
+
 .testimonials-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,7 +31,7 @@
 .testimonials-underline {
   height: 10px;
   width: 100%;
-  border-top: 3px solid #c32f38;
+  border-top: 3px solid var(--primary-color);
 }
 
 .people {
@@ -53,7 +57,7 @@
 
 .rec-titles {
   p {
-    color: #c32f38;
+    color: var(--primary-color);
     font-family: "Montserrat", sans-serif;
     font-size: 28.8px;
     font-weight: 700;
@@ -90,7 +94,7 @@
     height: 10px;
   }
   button.active {
-    background-color: #c32f38;
+    background-color: var(--primary-color);
   }
 }
 

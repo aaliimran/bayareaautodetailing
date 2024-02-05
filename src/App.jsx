@@ -13,12 +13,15 @@ import IDALogo from "./assets/img/IDA_logo.jpg";
 import Ticket from "./components/ticket/Ticket";
 import Footer from "./components/footer/Footer";
 import Send from "./components/send/Send";
+import construction from "./assets/img/construction.svg";
+import stayOnTrack from "./assets/img/stayOnTrack.svg";
+import weComeToYou from "./assets/img/weComeToYou.svg";
+import fast from "./assets/img/fast.svg";
 
 function App() {
   return (
     <>
       <Header />
-
       <div className="aboutUs-title">
         <video
           src={homeVideo}
@@ -117,7 +120,7 @@ function App() {
                 </div>
               </div>
               <div className="block-content">
-                <img src="" alt="" />
+                <img src={construction} alt="" />
                 <div className="block-title">
                   <p>EQUIPMENT</p>
                   <h3>
@@ -127,7 +130,7 @@ function App() {
                 </div>
               </div>
               <div className="block-content">
-                <img src="" alt="" />
+                <img src={stayOnTrack} alt="" />
                 <div className="block-title">
                   <p>STAY ON TRACK</p>
                   <h3>
@@ -139,7 +142,7 @@ function App() {
             </div>
             <div className="lower-blocks">
               <div className="block-content">
-                <img src="" alt="" />
+                <img src={weComeToYou} alt="" />
                 <div className="block-title">
                   <p>WE COME TO YOU</p>
                   <h3>
@@ -149,7 +152,7 @@ function App() {
                 </div>
               </div>
               <div className="block-content">
-                <img src="" alt="" />
+                <img src={fast} alt="" />
                 <div className="block-title">
                   <p>FAST</p>
                   <h3>

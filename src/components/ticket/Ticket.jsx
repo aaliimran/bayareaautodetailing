@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Ticket.css";
 
 const Ticket = () => {
@@ -11,9 +12,9 @@ const Ticket = () => {
               Want your vehicle to feel like new? <br /> Schedule a service
               today!
             </p>
-            <a href="#" target="_blank">
+            <Link to="/send">
               <button>BOOK ONLINE</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #c32f38;
+  --primary-background-color: #1f252a;
+}
+
 .ticket {
-  background: #c32f38;
+  background: var(--primary-color);
 }
 
 .ticket-conteiner {
@@ -29,7 +34,7 @@
   button {
     color: #ffffff;
     border: none;
-    background-color: #1f252a;
+    background-color: var(--primary-background-color);
     font-family: "Montserrat";
     font-size: 18px;
     font-weight: 600;
@@ -58,11 +63,7 @@
 
 @media screen and (max-width: 630px) {
   .ticket-content {
-    /* flex-direction: column;
-    padding: 20px; */
     p {
-      /* text-align: center;
-      margin: 10px 0 20px; */
       font-size: 20px;
     }
 

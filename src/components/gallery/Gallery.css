@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #c32f38;
+}
+
 .gallery {
   background-color: #1f252a;
 }
@@ -35,7 +39,7 @@
   button {
     color: #ffffff;
     border: none;
-    background-color: #c32f38;
+    background-color: var(--primary-color);
     font-family: "Montserrat";
     font-size: 18px;
     font-weight: 700;
@@ -142,13 +146,6 @@
     flex-direction: column;
   }
 }
-
-/* 
-gap: 16px;
-    flex-direction: column;
-    display: flex;
-    padding: 60px 0;
-    margin: 0 0 0 54px; */
 
 @media screen and (max-width: 480px) {
   .gallery-title {
