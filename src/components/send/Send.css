@@ -80,28 +80,28 @@
   justify-content: center;
   width: 50%;
   gap: 24px;
+}
+.submit-button {
+  color: #ffffff;
+  border: none;
+  background-color: var(--primary-color);
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 200ms linear;
+  padding: 15px 20px;
+}
 
-  button {
-    color: #ffffff;
-    border: none;
-    background-color: var(--primary-color);
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-weight: 600;
-    transition: all 200ms linear;
-    padding: 15px 20px;
-  }
-
-  button:hover {
-    background-color: var(--primary-background-color);
-    transition: background-color 0.5s ease;
-  }
+.submit-button:hover {
+  background-color: var(--primary-background-color);
+  transition: background-color 0.5s ease;
 }
 
 .about-input {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  padding-bottom: 38px;
 
   input {
     align-items: center;
@@ -123,6 +123,10 @@
     font-family: "Open Sans", "sans-serif";
     font-weight: 600;
   }
+}
+
+.message-input {
+  padding-bottom: 38px;
 }
 
 .message-input textarea {
@@ -164,10 +168,10 @@
   .inputs-and-button {
     align-items: center;
     width: 100%;
-
-    button {
-      width: 100%;
-    }
+    padding-bottom: 60px;
+  }
+  .submit-button {
+    width: 100%;
   }
 
   .map {
