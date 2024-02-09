@@ -29,7 +29,7 @@ const Send = () => {
           console.log(result.text);
           console.log("message sent");
           form.current.reset();
-          setIsFormValid(false); // Сбросить состояние валидности формы после отправки
+          setIsFormValid(false);
         },
         (error) => {
           console.log(error.text);
